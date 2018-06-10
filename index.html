@@ -10,12 +10,12 @@
 		<header class="main-header">
 			<b><a id="index-logo">DEVICE</a></b>
 			<nav class="main-navigation">
-			<!--<form>
+			    <form class="search-form" action="#" method="get">
             		<p>
             		<input type="search" name="q" placeholder="Поиск по сайту"> 
-    				<input type="submit" value="Найти">
+    				<button class="search" type="button">Найти<button>
     				</p>
-  				</form>-->
+  				</form>
   				<nav class="menu">
   					<p><a href="">Каталог товаров</a></p>
 					<ul class="menu-navigation">
@@ -46,9 +46,9 @@
 			<section class="slider-list">
 				<h2 class="visually-hidden">Слайдер товаров</h2>
 				<ul class="pagination-slider">
-          			<li class="pagination-item pagination-item-current"><a></a></li>
-          			<li class="pagination-item"><a href="#"></a></li>
-         			<li class="pagination-item"><a href="#"></a></li>
+          			<li class="pagination-item pagination-item-current"><a>Палка для селфи</a></li>
+          			<li class="pagination-item"><a href="#">Фитнес-браслеты</a></li>
+         			<li class="pagination-item"><a href="#">Квадрокоптер</a></li>
         		</ul>
 
 				<section class="slider-item">
@@ -57,7 +57,7 @@
         			<div class="product-description">
         				<b class="product-title">Делай селфи, как Бен Стиллер!</b>
         				<p class="product-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        				<a class="btn" href="">Подробнее</a>
+        				<a class="btn" href="catalog.html">Подробнее</a>
         				<table>
         					<tr><td>8,5 м</td><td>5 кг</td><td>Карбон</td></tr>
         					<tr><td>Длина палки</td><td>Вес палки</td><td>Mатериал</td></tr>
@@ -73,7 +73,7 @@
         			<div class="product-description">
         				<b class="product-title">Худеем правильно!</b>
         				<p class="product-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-        				<a class="btn" href="">Подробнее</a>
+        				<a class="btn" href="catalog.html">Подробнее</a>
         				<table>
         					<tr><td>48 часов</td></tr>
         					<tr><td>Без подзарядки</td></tr>
@@ -89,7 +89,7 @@
         			<div class="product-description">
         				<b class="product-title">Порхает как бабочка, жалит как пчела!</b>
         				<p class="product-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        				<a class="btn" href="">Подробнее</a>
+        				<a class="btn" href="catalog.html">Подробнее</a>
         				<table>
         					<tr><td>800 м</td><td>50 м</td></tr>
         					<tr><td>Дальность полета</td><td>Радиус поражения</td></tr>
@@ -184,9 +184,9 @@
 				<p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 				<p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 				<ul class="info-list">
-					<li class="info-item">Деловые Линии</li>
-					<li class="info-item">Автотрейдинг</li>
-					<li class="info-item">ЖелДорЭкспедиция</li>
+					<li class="info-item"><a href="#">Деловые Линии</a></li><a href="#">Деловые Линии</a>
+					<li class="info-item"><a href="#">Автотрейдинг</a></li>
+					<li class="info-item"><a href="#">ЖелДорЭкспедиция</a></li>
 				</ul>
 				<a class="btn" href="#">Подробнее о нас</a>  
 			</section>
@@ -195,7 +195,7 @@
 				<h2 class="contacts-title">Контакты</h2>
 				<p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<a class="map" href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
-				<a class="btn" href="#">НАпишите нам</a> 
+				<a class="btn" href="#">Напишите нам</a> 
 			</section>
 		</main>
 
@@ -235,18 +235,31 @@
 		</footer> 
 
 		<section class="modal modal-login">
-      		<h2 class="visually-hidden">Личный кабинет</h2>
-     		<p>Ваше имя:</p>
-     		<p>Ваш e-mail:</p>
-     		<p>Текст письма:</p>
-     		<button class="btn">Отправить</button>
-      		<!-- Здесь будет форма -->
-     		<span class="modal-close">x</span>
+			<h2 class="visually-hidden">Личный кабинет</h2>
+			<form class="login-form" action="#" method="post"></form>
+				<div class="user-name-wraper">
+					<label for="user-name">Ваше имя:</label>
+					<input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+			  	</div>
+			  	<div class="user-email-wraper">
+					<label for="user-email">Ваш e-mail:</label>
+					<input id="user-email" type="email" name="email" placeholder="email@example.com">
+			  	</div>
+			  	<div class="comments-wraper"></div>
+			  		<label for="comments">Текст письма:</label>
+			  		<textarea id="comments">В свободной форме</textarea>
+				</div>
+     			<button class="btn" type="submit">Отправить</button>
+		    </form>
+			<button class="modal-close" type="button">Закрыть</button>
     	</section>
     
     	<section class="modal modal-map">
-      		<h2 class="visually-hidden">Как до нас добраться</h2>
-     		<span class="modal-close">x</span>
-    	</section>	
+			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<p>
+				<img src="img/map-big.jpg" width="960" height="559" alt="Карта">
+			</p>
+			<button class="modal-close" type="button">Закрыть</button>
+		  </section>	
 	</body>
 </html>

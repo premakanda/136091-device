@@ -10,12 +10,12 @@
     <header class="main-header">
       <b><a href="index.html" id="index-logo">DEVICE</a></b>
       <nav class="main-navigation">
-        <!--<form>
+        <form class="search-form" action="#" method="get">
           <p>
-            <input type="search" name="q" placeholder="Поиск по сайту"> 
-            <input type="submit" value="Найти">
-          </p>
-          </form>-->
+          <input type="search" name="q" placeholder="Поиск по сайту"> 
+      <button class="search" type="button">Найти<button>
+      </p>
+    </form>
           <nav class="menu">
             <p><a href="">Каталог товаров</a></p>
           <ul class="menu-navigation">
@@ -52,8 +52,52 @@
       </nav>
 
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <h2 class="filters-title"></h2>
+        <form class="filter" method="get" action="#">
+          <div class="range-width">
+            <label for="value">Стоимость</label>
+              от 0<input type="range" min="0" max="5000" step="1" id="value" name="rating" value="5000">до 5000
+          </div>
+          <fieldset>
+            <legend>Цвет</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
+                  <label for="Black">Черный</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
+                  <label for="blue">Синий</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
+                  <label for="red">Красный</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
+                   <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Bluetooth</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="yes" id="filter-yes" checked>
+                    <label for="filter-yes">Есть</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="no" id="filter-no">
+                    <label for="filter-no">Нет</label>
+                  </li>
+                </ul>
+            </fieldset>
+             <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -160,19 +204,24 @@
     </footer> 
 
     <section class="modal modal-login">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <button class="btn">Отправить</button>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
-    
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <span class="modal-close">x</span>
-    </section>
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <form class="login-form" action="#" method="post"></form>
+          <div class="user-name-wraper">
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="user-email-wraper">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email" name="email" placeholder="email@example.com">
+            </div>
+            <div class="comments-wraper"></div>
+              <label for="comments">Текст письма:</label>
+              <textarea id="comments">В свободной форме</textarea>
+          </div>
+             <button class="btn" type="submit">Отправить</button>
+          </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
 
   </body>
 </html>
