@@ -1,0 +1,624 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonds/gilroyextrabold.woff2") format("woff2"),
+  url("fonds/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonds/opensans.woff2") format("woff2"),
+  url("fonds/opensanslight.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 900;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header {
+  
+  background-color: #f7e296;
+}
+
+.main-logo {
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.main-logo:hover {
+
+  opacity: 0.6;
+}
+
+.main-logo:active {
+  opacity: 0.3;
+}
+
+.main-navigation {
+
+}
+
+.search-form {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+
+}
+.search-form input[type="search"] {
+  font: inherit;
+  opacity: 0.3;
+}
+  
+.search-form input:hover {
+  opacity: 0.6;
+}
+
+.search {
+  display: none;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  background-color: inherit;
+  text-align: center;
+}
+
+.search:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search:activ {
+  opacity: 0.3;
+}
+
+.search-form input:focus {
+  border-bottom: 1px solid #000000;
+}
+
+.search-form input:focus .search {
+  display: block;
+}
+
+.menu {
+  background-color: #f7e296;
+}
+
+.menu-catalog {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.menu-catalog:hover {
+  opacity: 0.6;
+}
+    
+.menu-catalog:active {
+  opacity: 0.3;
+}
+
+.menu-navigation {
+  display: none;
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.menu-catalog:hover .menu-navigation { 
+  display: block;
+}
+
+.menu-navigation a:hover {
+  opacity: 0.6;
+}
+
+.menu-navigation a:active {
+  opacity: 0.3;
+}
+
+.user-navigation-index {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.user-navigation-index a:hover {
+  opacity: 0.6;
+}
+  
+.user-navigation-index a:active {
+  opacity: 0.3;
+}
+
+.site-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.site-navigation:hover {
+  opacity: 0.6;
+}
+
+.site-navigation:active {
+  opacity: 0.3;
+}
+
+.conteiner {
+
+}
+.visually-hidden {
+
+}
+
+.slider-list {
+  background-color: transparent;
+}
+.pagination-slider {
+
+}
+.slider-item {
+
+}
+
+.slider-number {
+  color: #ffffff;
+  font-size: 179px;
+  line-height: 179px;
+}
+.product-description {
+
+}
+
+.product-title {
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.product-text {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f0c52e;
+
+}
+
+.product-description .btn {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f0c52e;
+  
+}
+
+.product-description .btn:hover {
+  background-color: #f0c52e;
+}
+
+.product-description .btn:activ {
+  opacity: 0.5;
+}
+
+.table-title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+}
+.table-text {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.catalog-item a {
+  background-color: #f7e296;
+}
+
+.catalog-item a:hover {
+  background-color: #f0c52e;
+}
+
+.catalog-item a:activ {
+  opacity: 0.5;
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.servises {
+  background-color: #e5e5e5;
+}
+
+.services-list {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.services-item:activ {
+  color: #f7e184;
+background-color: #000000;
+}
+
+.block-title {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.block-text {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.brands {
+
+}
+.brand-item {
+  opacity: 0.2;
+}
+
+.brand-item:hover {
+  opacity: 1;
+}
+
+.info-title,
+.contacts-title {
+  font-size: 47px;
+  line-height: 48px;
+  
+}
+
+.info-text,
+.contacts-text {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.info-item {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*cotalog.html*/
+
+.user-navigation-catalog {
+
+}
+.user-navigation-catalog {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.user-navigation-catalog a:hover {
+  opacity: 0.6;
+}
+  
+.user-navigation-catalog a:active {
+  opacity: 0.3;
+}
+
+.user-navigation-catalog .entrance {
+  opacity: 0.3;
+}
+
+.page-title {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.breadcrumbs li {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover{
+  opacity: 0.6;
+}
+
+
+.breadcrumbs a:focus {
+  opacity: 0.1;
+}
+
+.filters {
+  background-color: #efefef;
+}
+
+.filter-bg {
+  background-color: #dbdbdb;
+}
+
+.filters-title {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.form-filter .range-title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.form-filter .range-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filters ul {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+
+}
+
+.filter-input:hover + label {
+ opacity: 0.6;
+}
+
+
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+
+  opacity: 0.25;
+}
+
+.catalog-sorting {
+  background-color: #ebebeb;
+}
+.sorting {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.sorting-list {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-item-current {
+  opacity: 1;
+}
+
+.sorting-item:hover {
+  opacity: 0.6;
+}
+.sorting-item:focus {
+  opacity: 1;
+}
+
+.sorting-choose {
+  font-size: 0;
+  opacity: 0.2;
+}
+
+.choose-item:hover {
+  opacity: 0.4;
+}
+
+.choose-item:focus {
+  opacity: 1;
+}
+
+.catalog-category {
+  font-size: 18px;
+  line-height: 24px;
+}
+.catalog-item span {
+
+  font-weight: 300;
+  color: #464646;
+}
+
+.catalog-item span {
+
+  font-weight: 300;
+  color: #464646;
+}
+
+.basket-user {
+  display: none;
+  background: transparent;
+  opacity: 0.7;
+}
+
+.comparison {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.comparison:hover{
+  opacity: 0.6;
+}
+
+
+.comparison:focus {
+  opacity: 0.1;
+}
+
+.catalog-item a:hover .basket-user {
+  display: block;
+  cursor: pointer;
+}
+
+.pagination-list {
+  background-color: #ebebeb;
+  text-transform: uppercase;
+}
+.pagination-select:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-select:focus {
+  opacity: 0.3;
+}
+.pagination-page {
+  opacity: 0.3;
+}
+
+.pagination-page:hover {
+  opacity: 0.6;
+}
+.pagination-page:focus {
+  opacity: 1;
+
+}
+/*-------------*/
+
+.main-footer {
+  background: #464646;
+}
+
+.footer-list {
+
+}
+.footer-logo {
+  color: #ffc600;
+
+}
+
+.navigation-footer {
+  color: #ffffff;
+}
+
+.footer-text {
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.social-button {
+  opacity: 0.3;
+}
+
+.social-button:hover {
+  opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.1;
+}
+
+.footer-link {
+  color: #ffc600;
+  font-size: 0;
+}
+
+.footer-link:hover {
+  opacity: 0.6;
+}
+
+.footer-link:activ {
+  opacity: 0.3;
+}
+
+.modal {
+color: #000000;
+background-color: #ffffff;
+}
+
+.login-form input,
+.login-form textarea {
+  color: #464646;
+  font-family: "Opensans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  background-color: #f2f2f2;
+    
+  }
+
+.login-form label {
+  font-size: 18px;
+  line-height: 24px; 
+  }
+
+.login-form input:hover,
+.login-form textarea:hover {
+  
+  background-color: #eaeaea;
+    
+  }
+
+.login-form input:focus,
+.login-form textarea:focus {
+  color: #5f5f5f;
+  background-color: #ffffff;
+  border: 1px solid #f7e296;  
+}
+
+.login-form input:invalid,
+.login-form textarea:invalid {
+    
+  background-color: #f6dada;
+  
+}
+  

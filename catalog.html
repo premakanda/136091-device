@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -27,9 +29,9 @@
                 <li><a href="#">Квадрокоптеры</a></li>
               </ul>
             </nav>
-          <ul class="user-navigation">
-            <li class="user"><a href="#">Валентин Петухов</a></li>
-                <li><a href="#">Войти</a></li>
+          <ul class="user-navigation-catalog">
+                <li><a href="#">Валентин Петухов</a></li>
+                <li><a class="entrance">Войти</a></li>
                 <li><a href="#">Сравнить</a></li>
                 <li><a href="#">Корзина</a></li>
             </ul>
@@ -52,11 +54,16 @@
       </nav>
 
       <section class="filters">
-        <h2 class="filters-title">Фильтр:</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <div class="filter-bg">
+          <h2 class="filters-title">Фильтр:</h2>
+        </div>
+        <form class="form-filter" method="get" action="https://echo.htmlacademy.ru">
           <div class="range-width">
-            <label for="value">Стоимость</label>
-              от 0<input type="range" min="0" max="5000" step="1" id="value" name="rating" value="5000">до 5000
+            <label class="range-title" for="value">Стоимость</label>
+            <div class="range"></div>
+            <div class="range"></div>
+            <input class="range-text" type="text" id="value" name="rating" value="от 0"> 
+            <input class="range-text" type="text" id="value" name="rating" value="до 5000">   
           </div>
           <fieldset>
             <legend>Цвет</legend>
@@ -105,12 +112,14 @@
         <div class="catalog-sorting">
           <b class="sorting">Сортировка</b>
           <ul class="sorting-list">
-            <li class="sorting-item-current">По цене</li>
-            <li class="sorting-item">По типу</li>
-            <li class="sorting-item">По популярности</li>
-            <li class="sorting-item"><span></span></li>
-            <li class="sorting-item"><span></span></li>
+            <li class="sorting-item-current"><a href="#">По цене</a></li>
+            <li class="sorting-item"><a href="#">По типу</a></li>
+            <li class="sorting-item"><a href="#">По популярности</a></li>
           </ul>
+          <ul class="sorting-choose">
+              <li class="choose-item"><a href="#">Больше</a></li>
+              <li class="choose-item"><a href="#">Меньше</a></li>
+            </ul>
         </div>
         <section class="catalog-block">
           <h3 class="visually-hidden">Фото моноподов для селфи</h3>
@@ -119,49 +128,63 @@
               <a href="catalog-item.html">
                 <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               </a>
-              <a href="catalog-item.html">
-                <span class="catalog-category">Любительская селфи-палка</span>
-              </a>
-              <span>500 руб</span>
+                <p class="catalog-category">Любительская селфи-палка</p>
+                <span>500 руб</span>
+              <div class="basket-user">
+                  <button type="button" class="btn">В корзину</button>
+                  <button type="button" class="comparison">Добавить к сравнению</button>
+              </div>
             </li>
 
             <li class="catalog-item">
               <a href="catalog-item.html">
                 <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               </a>
-              <a href="catalog-item.html">
-                <span class="catalog-category">Профессиональная селфи-палка</span>
-              </a>
+              
+                <p class="catalog-category">Профессиональная селфи-палка</p>
+           
               <span>1500 руб</span>
+              <div class="basket-user">
+                  <button type="button" class="basket">В корзину</button>
+                  <button type="button" class="comparison">Добавить к сравнению</button>
+              </div>
             </li>
 
             <li class="catalog-item">
               <a href="catalog-item.html">
                 <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               </a>
-              <a href="catalog-item.html">
-                <span class="catalog-category">Непотопляемая селфи-палка</span>
-              </a>
+              
+                <p class="catalog-category">Непотопляемая селфи-палка</p>
+              
               <span>2500 руб</span>
+              <div class="basket-user">
+                  <button type="button" class="basket">В корзину</button>
+                  <button type="button" class="comparison">Добавить к сравнению</button>
+              </div>
             </li>
 
             <li class="catalog-item">
               <a href="catalog-item.html">
                 <img src="img/item-4.jpg" width="360" height="380" alt="Cелфи-палка Следуй за мной">
               </a>
-              <a href="catalog-item.html">
-                <span class="catalog-category">Cелфи-палка "Следуй за мной"</span>
-              </a>
+              
+                <p class="catalog-category">Cелфи-палка "Следуй за мной"</p>
+              
               <span>4900 руб</span>
+              <div class="basket-user">
+                  <button type="button" class="basket">В корзину</button>
+                  <button type="button" class="comparison">Добавить к сравнению</button>
+              </div>
             </li>
           </ul>
 
           <ul class="pagination-list">  
-            <li class="pagination-item"><a href="#">Назад</a></li>
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Вперед</a></li>
+            <li class="pagination-select"><a href="#">Назад</a></li>
+            <li class="pagination-item-current"><a>1</a></li>
+            <li class="pagination-page"><a href="#">2</a></li>
+            <li class="pagination-page"><a href="#">3</a></li>
+            <li class="pagination-select"><a href="#">Вперед</a></li>
           </ul>
 
         </section> 
