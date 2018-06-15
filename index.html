@@ -12,7 +12,7 @@
 		<header class="main-header">
 
 			<nav class="main-navigation">
-				<b class="main-logo"><a id="index-logo">Device</a></b>
+				<b class="main-logo">Device</b>
 			    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             		<p>
             		<input type="search" name="q" placeholder="Поиск по сайту"> 
@@ -20,28 +20,29 @@
     				</p>
   				</form>
   				<nav class="menu">
-  					<a class="menu-catalog" href="">Каталог товаров</a>
+  					<a class="menu-catalog" href="#">Каталог товаров</a>
 					<ul class="menu-navigation">
-      					<li><a href="#">Виртуальная реальность</a></li>
-      					<li><a href="#">Моноподы для селфи</a></li>
-      					<li><a href="#">Экшн-камеры</a></li>
-      					<li><a href="#">Фитнес браслеты</a></li>
-      					<li><a href="#">Умные часы</a></li>
-      					<li><a href="#">Квадрокоптеры</a></li>
+      					<li><a class="menu-item" href="#">Виртуальная реальность</a></li>
+      					<li><a class="menu-item" href="#">Моноподы для селфи</a></li>
+      					<li><a class="menu-item" href="#">Экшн-камеры</a></li>
+      					<li><a class="menu-item" href="#">Фитнес браслеты</a></li>
+      					<li><a class="menu-item" href="#">Умные часы</a></li>
+      					<li><a class="menu-item" href="#">Квадрокоптеры</a></li>
     	   			</ul>
-    	    	</nav>
-  				<ul class="user-navigation-index">
-          			<li><a href="#">Войти</a></li>
-          			<li><a href="#">Сравнить</a></li>
-          			<li><a href="#">Корзина</a></li>
+  				<ul class="user-navigation">
+					<li class="user">
+						<a class="user-item" href="#">Валентин Петухов</a>
+					</li>
+					<li><a class="user-item" href="#">Войти</a></li>
+					<li><a class="user-item" href="#">Сравнить</a></li>
+					<li><a class="user-item" href="#">Корзина</a></li>
         		</ul>
         		<ul class="cite-navigation">
-          			<li><a href="#">Доставка</a></li>
-          			<li><a href="#">Гарантия</a></li>
-          			<li><a href="#">Контакты</a></li>
+          			<li><a class="site-item" href="#">Доставка</a></li>
+          			<li><a class="site-item" href="#">Гарантия</a></li>
+          			<li><a class="site-item" href="#">Контакты</a></li>
         		</ul>
 			</nav>
-			<span class="line-header"></span>
 		</header>
 
 		<main class="container">
@@ -57,7 +58,7 @@
 				<section class="slider-item">
 					<h2 class="visually-hidden">Палка для селфи</h2>
 					<img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-					<span class="slider-number">02</span>
+					<span class="slider-number">01</span>
         			<div class="product-description">
         				<b class="product-title">Делай селфи, как Бен Стиллер!</b>
         				<p class="product-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -72,7 +73,7 @@
 				<section class="slider-item">
 					<h2 class="visually-hidden">Фитнес-браслеты</h2>
           			<img src="img/slider-2.png" width="385" height="485" alt="Фитнес-браслеты">
-					<span class="slider-number">01</span>
+					<span class="slider-number">02</span>
         			<div class="product-description">
         				<b class="product-title">Худеем правильно!</b>
         				<p class="product-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -87,7 +88,7 @@
 				<section class="slider-item">
 					<h2 class="visually-hidden">Квадрокоптер</h2>
           			<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-					<span class="slider-number">02</span>
+					<span class="slider-number">03</span>
         			<div class="product-description">
         				<b class="product-title">Порхает как бабочка, жалит как пчела!</b>
         				<p class="product-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -104,46 +105,53 @@
 				<h2 class="visually-hidden">Список товаров</h2>
 				<ul class="catalog-list">
 
-          			<li class="catalog-item">
-              			<a href="catalog.html">
+          			<li>
+              			<a class="catalog-item" href="catalog.html">
               			    <img src="img/product-1.svg" width="97" height="55" alt="Виртуальная реальность">
-              				<span class="catalog-item-title">Виртуальная реальность</span>
-             			</a>
+						 </a>
+						 <a class="catalog-item-title" href="catalog.html">Виртуальная реальность</a>
             		</li>
 
-            		<li class="catalog-item">
-              			<a href="catalog.html">
+            		<li>
+              			<a class="catalog-item" href="catalog.html">
               			    <img src="img/product-2.svg" width="86" height="117" alt="Моноподы для селфи">
-              				<span class="catalog-item-title">Моноподы для селфи</span>
-             			</a>
+              				
+						 </a>
+						 <a class="catalog-item-title" href="catalog.html">Моноподы для селфи</a>
             		</li>
 
-            		<li class="catalog-item">
-              			<a href="catalog.html">
+            		<li>
+              			<a class="catalog-item" href="catalog.html">
               			    <img src="img/product-3.svg" width="71" height="87" alt="Экшн-камеры">
-              				<span class="catalog-item-title">Экшн-камеры</span>
-             			</a>
+              				
+						 </a>
+						 <a class="catalog-item-title" href="catalog.html">Экшн-камеры</a>
+						 
             		</li>
 
-            		<li class="catalog-item">
-              			<a href="catalog.html">
+            		<li>
+              			<a class="catalog-item" href="catalog.html">
               			    <img src="img/product-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-              				<span class="catalog-item-title">Фитнес-браслеты</span>
-             			</a>
+              				
+						 </a>
+						 <a class="catalog-item-title" href="catalog.html">Фитнес-браслеты</a>
             		</li>
 
-            		<li class="catalog-item">
-              			<a href="catalog.html">
+            		<li>
+              			<a class="catalog-item" href="catalog.html">
               			    <img src="img/product-5.svg" width="56" height="98" alt="Умные часы">
-              				<span class="catalog-item-title">Умные часы</span>
-             			</a>
+              				
+						 </a>
+						 <a class="catalog-item-title" href="catalog.html">Умные часы</a>
+             			
             		</li>
 
-            		<li class="catalog-item">
-              			<a href="catalog.html">
+            		<li>
+              			<a class="catalog-item" href="catalog.html">
               			    <img src="img/product-6.svg" width="132" height="69" alt="Квадрокоптеры">
-              				<span class="catalog-item-title">Квадрокоптеры</span>
-             			</a>
+              				
+						 </a>
+						 <a class="catalog-item-title" href="catalog.html">Квадрокоптеры</a>
             		</li>
             	</ul>		
 			</section>
@@ -151,9 +159,9 @@
 			<section class="services">
 				<h2 class="visually-hidden">Список услуг</h2>
 				<ul class="services-list">
-					<li class="services-item"><a class="btn" href="#">Доставка</a></li>
-					<li class="services-item"><a class="btn" href="#">Гарантия</a></li>
-					<li class="services-item"><a class="btn" href="#">Кредит</a></li>
+					<li><a class="btn btn-active" href="#">Доставка</a></li>
+					<li><a class="btn" href="#">Гарантия</a></li>
+					<li><a class="btn" href="#">Кредит</a></li>
 				</ul>
 				<div class="services-block">
 					<section class="delivery">
@@ -174,10 +182,10 @@
 			<section class="brands">
 				<h2 class="visually-hidden">Логотип производителей</h2>
 				<ul class="brands-list">
-					<li class="brand-item"><img src="img/logo-dji.png" width="260" height="100" alt="dji"></li>
-					<li class="brand-item"><img src="img/logo-sp.png" width="260" height="100" alt="sp"></li>
-					<li class="brand-item"><img src="img/logo-gopro.png" width="260" height="100" alt="gopro"></li>
-					<li class="brand-item"><img src="img/logo-vive.png" width="260" height="100" alt="vive"></li>
+					<li class="brand-item"><img src="img/logo-dji-1.png" width="260" height="100" alt="dji"></li>
+					<li class="brand-item"><img src="img/logo-sp-1.png" width="260" height="100" alt="sp"></li>
+					<li class="brand-item"><img src="img/logo-gopro-1.png" width="260" height="100" alt="gopro"></li>
+					<li class="brand-item"><img src="img/logo-vive-1.png" width="260" height="100" alt="vive"></li>
 				</ul>
 			</section>	
 
@@ -203,23 +211,23 @@
 
 		<footer class="main-footer">
 			<div class="footer-list">
-				<b class="main-logo footer-logo"><a href="#index-logo">DEVICE</a></b>
-				<ul class="user-navigation navigation-footer">
-  					<li class="user user-footer">
-  						<a href="#">Валентин Петухов</a>
+				<b class="main-logo footer-logo">DEVICE</b>
+				<ul class="user-navigation ">
+  					<li class="user">
+  						<a class="user-item" href="#">Валентин Петухов</a>
   					</li>
-          			<li><a href="#">Войти</a></li>
-          			<li><a href="#">Сравнить</a></li>
-          			<li><a href="#">Корзина</a></li>
+          			<li><a class="user-item" href="#">Войти</a></li>
+          			<li><a class="user-item" href="#">Сравнить</a></li>
+          			<li><a class="user-item" href="#">Корзина</a></li>
         		</ul>
 			</div>
 				
 			<div class="footer-list">
 				<p class="footer-text">г. Москва, ул. Строителей, 15 </p>
-				<ul class="cite-navigation navigation-footer">
-          			<li><a href="#">Доставка</a></li>
-          			<li><a href="#">Гарантия</a></li>
-          			<li><a href="#">Контакты</a></li>
+				<ul class="cite-navigation">
+          			<li><a class="site-item" href="#">Доставка</a></li>
+          			<li><a class="site-item" href="#">Гарантия</a></li>
+          			<li><a class="site-item" href="#">Контакты</a></li>
         		</ul>
 				<p class="footer-text">Тел.: +7 (495) 495-95-95</p>
 			</div>
