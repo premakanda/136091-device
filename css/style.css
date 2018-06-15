@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("fonds/gilroyextrabold.woff2") format("woff2"),
-  url("fonds/gilroylight.woff2") format("woff2");
+  src: url("../fonds/gilroyextrabold.woff2") format("woff2"),
+  url("../fonds/gilroylight.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("fonds/opensans.woff2") format("woff2"),
-  url("fonds/opensanslight.woff2") format("woff2");
+  src: url("../fonds/opensans.woff2") format("woff2"),
+  url("../fonds/opensanslight.woff2") format("woff2");
 }
 
 body {
