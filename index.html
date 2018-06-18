@@ -12,40 +12,45 @@
 		<header class="main-header">
 
 			<nav class="main-navigation">
-				<b class="main-logo">Device</b>
-			    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            		<p>
-            		<input type="search" name="q" placeholder="Поиск по сайту"> 
-    				<button class="search" type="submit">Найти</button>
-    				</p>
-  				</form>
-  				<nav class="menu">
-  					<a class="menu-catalog" href="#">Каталог товаров</a>
-					<ul class="menu-navigation">
-      					<li><a class="menu-item" href="#">Виртуальная реальность</a></li>
-      					<li><a class="menu-item" href="#">Моноподы для селфи</a></li>
-      					<li><a class="menu-item" href="#">Экшн-камеры</a></li>
-      					<li><a class="menu-item" href="#">Фитнес браслеты</a></li>
-      					<li><a class="menu-item" href="#">Умные часы</a></li>
-      					<li><a class="menu-item" href="#">Квадрокоптеры</a></li>
-    	   			</ul>
-  				<ul class="user-navigation">
-					<li class="user">
-						<a class="user-item" href="#">Валентин Петухов</a>
-					</li>
-					<li><a class="user-item" href="#">Войти</a></li>
-					<li><a class="user-item" href="#">Сравнить</a></li>
-					<li><a class="user-item" href="#">Корзина</a></li>
-        		</ul>
-        		<ul class="cite-navigation">
-          			<li><a class="site-item" href="#">Доставка</a></li>
-          			<li><a class="site-item" href="#">Гарантия</a></li>
-          			<li><a class="site-item" href="#">Контакты</a></li>
-        		</ul>
+				<b class="logo-header">Device</b>
+
+				<div class="user-wrapper">
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<p>
+						<input type="search" name="q" placeholder="Поиск по сайту"> 
+						<button class="search" type="submit">Найти</button>
+						</p>
+					</form>
+					
+					<ul class="user-navigation">
+						<li class="user">
+							<a class="user-item" href="#">Валентин Петухов</a>
+						</li>
+						<li><a class="user-item" href="#">Войти</a></li>
+						<li><a class="user-item" href="#">Сравнить</a></li>
+						<li><a class="user-item" href="#">Корзина</a></li>
+					</ul>
+				</div>	
+				<div class="menu-wrapper">							
+					<a class="catalog-main" href="#">Каталог товаров</a>
+					<ul class="cite-navigation">
+						<li><a class="site-item" href="#">Доставка</a></li>
+						<li><a class="site-item" href="#">Гарантия</a></li>
+						<li><a class="site-item" href="#">Контакты</a></li>
+					</ul>
+				</div>	
 			</nav>
+			<ul class="menu-list">
+				<li><a class="menu-item" href="#">Виртуальная реальность</a></li>
+				<li><a class="menu-item" href="#">Моноподы для селфи</a></li>
+				<li><a class="menu-item" href="#">Экшн-камеры</a></li>
+				<li><a class="menu-item" href="#">Фитнес браслеты</a></li>
+				<li><a class="menu-item" href="#">Умные часы</a></li>
+				<li><a class="menu-item" href="#">Квадрокоптеры</a></li>
+			</ul>
 		</header>
 
-		<main class="container">
+		<main>
 			<h1 class="visually-hidden">Магазин "DEVICE"</h1>
 			<section class="slider-list">
 				<h2 class="visually-hidden">Слайдер товаров</h2>
@@ -57,8 +62,9 @@
 
 				<section class="slider-item">
 					<h2 class="visually-hidden">Палка для селфи</h2>
-					<img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
 					<span class="slider-number">01</span>
+					<div class="slider-wrapper">
+					<img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
         			<div class="product-description">
         				<b class="product-title">Делай селфи, как Бен Стиллер!</b>
         				<p class="product-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -67,13 +73,16 @@
         					<tr class="table-title"><td>8,5 м</td><td>5 кг</td><td>Карбон</td></tr>
         					<tr class="table-text"><td>Длина палки</td><td>Вес палки</td><td>Mатериал</td></tr>
         				</table>
-        			</div>
+					</div>
+				</div>
 				</section>	
 
 				<section class="slider-item">
 					<h2 class="visually-hidden">Фитнес-браслеты</h2>
-          			<img src="img/slider-2.png" width="385" height="485" alt="Фитнес-браслеты">
 					<span class="slider-number">02</span>
+					<div class="slider-wrapper">
+          			<img src="img/slider-2.png" width="385" height="485" alt="Фитнес-браслеты">
+					
         			<div class="product-description">
         				<b class="product-title">Худеем правильно!</b>
         				<p class="product-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -82,13 +91,16 @@
         					<tr class="table-title"><td>48 часов</td></tr>
         					<tr class="table-text"><td>Без подзарядки</td></tr>
         				</table>
-        			</div>
+					</div>
+				</div>
 				</section>	
 
 				<section class="slider-item">
 					<h2 class="visually-hidden">Квадрокоптер</h2>
-          			<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 					<span class="slider-number">03</span>
+					<div class="slider-wrapper">
+          			<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+					
         			<div class="product-description">
         				<b class="product-title">Порхает как бабочка, жалит как пчела!</b>
         				<p class="product-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -97,7 +109,8 @@
         					<tr class="table-title"><td>800 м</td><td>50 м</td></tr>
         					<tr class="table-text"><td>Дальность полета</td><td>Радиус поражения</td></tr>
         				</table>
-        			</div>
+					</div>
+				</div>
 				</section>	
 			</section>
 
@@ -188,7 +201,7 @@
 					<li class="brand-item"><img src="img/logo-vive-1.png" width="260" height="100" alt="vive"></li>
 				</ul>
 			</section>	
-
+          <div class="info-wrapper">
 			<section class="info">
 				<h2 class="info-title">О нас</h2>
 				<p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -207,12 +220,13 @@
 				<a class="map" href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
 				<a class="btn" href="#">Напишите нам</a> 
 			</section>
+		  </div>
 		</main>
 
 		<footer class="main-footer">
 			<div class="footer-list">
 				<b class="main-logo footer-logo">DEVICE</b>
-				<ul class="user-navigation ">
+				<ul class="user-navigation user-navigation-footer">
   					<li class="user">
   						<a class="user-item" href="#">Валентин Петухов</a>
   					</li>
@@ -224,7 +238,7 @@
 				
 			<div class="footer-list">
 				<p class="footer-text">г. Москва, ул. Строителей, 15 </p>
-				<ul class="cite-navigation">
+				<ul class="cite-navigation cite-navigation-footer">
           			<li><a class="site-item" href="#">Доставка</a></li>
           			<li><a class="site-item" href="#">Гарантия</a></li>
           			<li><a class="site-item" href="#">Контакты</a></li>
@@ -235,7 +249,7 @@
 			<div class="footer-list">
 				<span class="line"></span>
 				<ul class="social-list">
-         			<li><a class="social-button" href="#">Фейсбук</a></li>
+         			<li><a class="social-button"S href="#">Фейсбук</a></li>
           			<li><a class="social-button" href="#">Инстаграм</a></li>
           			<li><a class="social-button" href="#">Твиттер</a></li>
        			</ul>

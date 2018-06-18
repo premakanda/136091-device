@@ -1,18 +1,34 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonds/gilroyextrabold.woff2") format("woff2"),
-  url("../fonds/gilroylight.woff2") format("woff2");
+  src: url("../fonts/gilroylight.woff") format("woff"), 
+      url("../fonts/gilroylight.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff") format("woff"),
+      url("../fonts/gilroyextrabold.woff2") format("woff2");
+  font-weight: 900;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonds/opensans.woff2") format("woff2"),
-  url("../fonds/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff") format("woff"),
+      url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"),
+      url("../fonts/opensans.woff2") format("woff2");
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  width: 1200px;
+ margin: 0 auto;
+  padding: 0 20px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -24,23 +40,23 @@ body {
 
 a {
   text-decoration: none;
-  
 }
 
 .main-header {
-  
-  background-color: #f7e296;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
-.main-logo {
-  color: #000000;
+.logo-header {
+  position: absolute;
+  top: 20px;
   font-size: 48px;
   line-height: 48px;
   text-transform: uppercase;
 }
 
 .main-logo:hover {
-
   opacity: 0.6;
 }
 
@@ -49,11 +65,25 @@ a {
 }
 
 .main-navigation {
+  
+  
+  padding: 50px 60px;
+  background-color: #f7e296;
+}
+
+.user-wrapper,
+.menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
 }
 
+
 .search-form {
-  font-family: "Opensans", Arial, sans-serif;
+  width: 440px;
+  height: 50px;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -63,6 +93,8 @@ a {
 
 }
 .search-form input[type="search"] {
+  width: 355px;
+  height: 50px;
   font: inherit;
   color: #000000;
   opacity: 0.3;
@@ -74,7 +106,8 @@ a {
 }
 
 .search {
-
+  width: 85;
+  height: 48px;
   border: 1px solid #000000;
   color: #000000;
   background-color: #f7e296;
@@ -98,11 +131,8 @@ a {
 }
 
 
-.menu {
-  background-color: #f7e296;
-}
 
-.menu-catalog,
+.catalog-main,
 .site-item {
   color: #000000;
   text-decoration: none;
@@ -111,34 +141,59 @@ a {
   
 }
 
-.menu-catalog:hover,
+.catalog-main:hover,
 .site-item:hover {
   color: #000000;
   opacity: 0.6;
 }
     
-.menu-catalog:active,
+.catalog-main:active,
 .site-item:active {
   color: #000000;
   opacity: 0.3;
 }
 
-.menu-navigation,
+.menu-list,
 .user-navigation,
 .cite-navigation {
   list-style: none;
+  padding: o;
+  margin: 0;
 }
 
+.user-navigation {
+  width: 500px;
+}
+.cite-navigation {
+  width: 500px;
+}
+
+.catalog-main {
+  width: 300px;
+}
+.menu-list {
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 130px;
+  padding: 0 60px;
+  background-color: #f7e296;
+}
+
+.menu-list li {
+  width: 200px;
+  
+}
 .menu-item,
 .user-item {
-  font-family: "Opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   color: #000000;
   text-decoration: none;
   letter-spacing: 0.1px;
-
 }
 
 .menu-item a:hover,
@@ -155,20 +210,31 @@ a {
 
 .conteiner {
 
-}s
+  
+}
+
+
 .visually-hidden {
 
 }
 
 .slider-list {
-  background-color: transparent;
+   
 }
 .pagination-slider {
   list-style: none;
 
 }
-.slider-item {
-
+.slider-list {
+  margin-bottom: 90px;
+}
+.slider-wrapper {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+}
+.slider-item img {
+  
 }
 
 .slider-number {
@@ -179,7 +245,8 @@ a {
 }
 .product-description {
   color: #000000;
-  text-transform: none;
+  width: 500px;
+
 }
 
 .product-title {
@@ -188,7 +255,7 @@ a {
 }
 
 .product-text {
-  font-family: "Opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -224,21 +291,45 @@ a {
   font-weight: 300;
 }
 .table-text {
-  font-family: "Opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;px
   letter-spacing: 0.1;
 }
 
+.catalog {
+  margin-bottom: 180px;
+}
+
 .catalog-list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
   list-style: none;
  
 }
-
+.catalog-list li {
+  width: 160px;
+  margin-right: 40px;
+ 
+}
+.catalog-list li {
+  width: 160px;
+  margin-right: 40px;
+ 
+}
+.catalog-list li:last-child {
+ 
+  margin-right: 0;
+ 
+}
 
 .catalog-item {
-  
+  display: block;
+  margin-bottom: 35px;
+  width: 160px;
+  height: 160px;
   text-decoration: none;
   
   background-color: #f7e296;
@@ -251,11 +342,10 @@ a {
   color: #000000;
   font-size: 18px;
   line-height: 24px;
-  
   font-weight: 900;
   letter-spacing: 0.1px;
   
- }
+}
 .catalog-item-title:activ {
  color: #000000;
  opacity: 0.3;
@@ -265,13 +355,18 @@ a {
   opacity: 0.3;
 }
 
-
-
-.servises {
+.services {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
   background-color: #e5e5e5;
 }
 
 .services-list {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+ 
   list-style: none;
 }
 
@@ -279,7 +374,9 @@ a {
   color: #ffffff;
   background-color: #000000;
 }
-
+.services-block {
+  width: 700px;
+}
 .block-title {
   font-size: 47px;
   line-height: 48px;
@@ -287,7 +384,7 @@ a {
 }
 
 .block-text {
-  font-family: "Opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -300,18 +397,43 @@ a {
 }
 
 .brands-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 1100px;
+  margin: 85px 0;
+  margin-right: 65px;
   list-style: none;
 }
 .brand-item {
+  width: 260px;
+  height: 100px;
+  margin-right: 40px;
   opacity: 0.2;
+}
+.brand-item:last-child {
+  margin-right: 0;
 }
 
 .brand-item:hover {
   opacity: 1;
 }
 
+.info {
+  width: 460px;
+  margin-right: 140px;
+}
+.contacts {
+  width: 560px;
+}
+.info-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
 .info-title,
 .contacts-title {
+  padding: 50px 0;
   font-size: 47px;
   line-height: 48px;
   
@@ -320,14 +442,18 @@ a {
 
 .info-text,
 .contacts-text {
-  font-family: "Opensans", Arial, sans-serif;
+  padding-bottom: 40px;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   color: #464646;
   letter-spacing: 0;
 }
-
+.info-list {
+  padding-top: 75px;
+  padding-bottom: 60px;
+}
 .info-item {
   font-size: 16px;
   line-height: 20px;
@@ -336,22 +462,24 @@ a {
   letter-spacing: 0;
 
 }
+.map {
+  width: 560px;
+  height: 222px;
+  margin-bottom: 70px;
+}
+
 
 /*cotalog.html*/
-
-.main-logo a {
-  text-decoration: none;
-  color: #000000;
+.page-navigation {
+  width: 500px;
+ margin-left: 80px;   
+  margin-bottom: 50px;
 }
 
-.user-catalog {
-
-}
 
 .user-item-current {
   color: #000000;
   opacity: 0.3;
-
 }
 
 
@@ -361,7 +489,10 @@ a {
   text-transform: none;
 }
 .breadcrumbs {
-  font-family: "Opensans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -391,6 +522,10 @@ a {
 
 .filter-bg {
   background-color: #dbdbdb;
+}
+.filters-wrapper {
+  width: 200px;
+  
 }
 
 .filters-title {
@@ -424,7 +559,7 @@ a {
 }
 
 .filters-option+label {
-  font-family: "Opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -432,6 +567,8 @@ a {
 
 }
 .filter-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -450,7 +587,19 @@ a {
 
   opacity: 0.25;
 }
-
+.catalog {
+  
+}
+.catalog-block {
+  padding-top: 70px;
+  padding-left: 70px;
+  padding-bottom: 80px;
+}
+.catalog-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
 .catalog-sorting {
   color: #000000;
   background-color: #ebebeb;
@@ -464,7 +613,7 @@ a {
   list-style: none;
 }
 .sorting-item {
-  font-family: "Opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -497,20 +646,32 @@ a {
   color: #000000;
 }
 
-.catalog-list {
+.catalog-shop {
+  display: flex;
+  width: 760px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.catalog-model {
+  width: 360px;
+  min-height: 460px;
+  margin-bottom: 40px;
+  margin-right: 40px;
   list-style: none;
 
 }
-.catalog-item a {
+.catalog-model:nth-child(2n) {
+  margin-right: 0;
+}
+.catalog-model a {
   text-decoration: none;
 }
 
-.catalog-category {
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: none;
-}
-.catalog-item span {
+.catalog-model span {
 
   font-weight: 300;
   color: #464646;
@@ -524,7 +685,7 @@ a {
 }
 
 .comparison {
-  font-family: "Opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -586,24 +747,35 @@ a {
 /*-------------*/
 
 .main-footer {
+
   color: #ffffff;
   background-color: #464646;
 }
 
 .footer-list {
-  color: #ffffff;
+  
 }
 .footer-logo {
+  width: 200px;
+  padding-top: 60px;
+  padding-bottom: 30px;;
   color: #ffc600;
-  
-
+  font-size: 47px;
 }
 
-
-.main-footer .site-item {
+.user-navigation-footer {
+  width: 480px;
   color: #ffffff;
-
 }
+
+.footer-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+
 
 .main-footer .site-item:hover {
   color: #ffffff;
@@ -636,15 +808,31 @@ a {
 
 
 .footer-text {
-  font-family: "Opensans", Arial, sans-serif;
+  width: 200px;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   color: #ffffff;
   letter-spacing: 0.1px;
 }
+.cite-navigation-footer {
+  width: 440px;
+  
+}
+.main-footer .site-item {
+  color: #ffffff;
+}
 
+.line {
+  width: 80px;
+  height: 8px;
+  background-color: #ffc600;
+}
 .social-list{
+  width: 160px;
+  height: 30px;
+  padding: 65px 0;
   list-style: none;
 }
 .social-button {
@@ -662,9 +850,10 @@ a {
 }
 
 .footer-link {
-  color: #ffc600;
+  width: 27px;
+  height: 35px;
   text-decoration: none;
-  background-color: #464646;
+  background-image: url("../img/logo-html-1.png")
 }
 
 .footer-link:hover {
@@ -683,7 +872,7 @@ background-color: #ffffff;
 .login-form input,
 .login-form textarea {
   color: #464646;
-  font-family: "Opensans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
