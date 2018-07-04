@@ -292,14 +292,14 @@ input[type="search"]:focus {
 
 .menu-wrapper-block {
   position: absolute;
-  top: 58px;
+  top: 21px;
   left: -60px;
   width: 1100px;
   margin: 0;
   padding: 0;
   list-style: none;
   padding-left: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 77px;
   background-color: #f7e296;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1158,7 +1158,7 @@ table {
   padding: 0;
   margin-bottom: 10px;
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000000;
 }
 
 .range-controls {
@@ -1285,7 +1285,6 @@ fieldset {
 
 .filter-option label {
   position: relative;
-  display: block;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
