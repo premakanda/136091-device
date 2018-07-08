@@ -618,6 +618,7 @@ table {
 }
 
 .services-list {
+  background-color: #e5e5e5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,10 +1064,15 @@ table {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  background-color: #ebebeb;
 }
 
 .sorting-list {
-  background-color: #ebebeb;
+  background-color: #ebebeb; 
+}
+
+.sorting-list-block {
+  width: 593px;
 }
 
 .sorting-list {
@@ -1083,14 +1089,16 @@ table {
   padding: 0;
   list-style: none;
 }
+
 .sorting-list:last-child {
-  margin-left: auto;
+  width: 60px;
 }
 
 .sorting-list-item {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 328px;
 }
 
 
@@ -1106,7 +1114,7 @@ table {
 .filters-title {
   display: block;
   background-color: #dbdbdb;
-  padding: 21px 0;
+  padding: 23px 0;
   padding-left: 60px;
   padding-right: 177px;
 }
@@ -1168,8 +1176,13 @@ table {
   background-position: 0 0;
 }
 
-.sorting-list li {
+.sorting-row {
   padding: 21px 0;
+  text-decoration: none;
+}
+.choose-block {
+  padding: 28px 0;
+  background-color: #ebebeb;
   text-decoration: none;
 }
 
@@ -1225,7 +1238,7 @@ table {
 }
 
 .catalog-main {
-  width: 830px;
+  width: 760px;
   margin: 0;
 }
 
@@ -1606,6 +1619,7 @@ fieldset {
 }
 
 .pagination-list {
+  width: 760px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1694,8 +1708,15 @@ fieldset {
 /*-------------*/
 
 .main-footer {
-padding: 63px 0;
 background-color: #464646;
+}
+
+.container-footer {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding: 63px 0;
+  background-color: #464646;
 }
 
 .footer-list {
