@@ -540,7 +540,7 @@ table {
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
-  letter-spacing: 0.1;
+  letter-spacing: 0.1px;
 }
 
 .catalog-list {
